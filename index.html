@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tims Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3d00eddcbf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo2.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Data Designer <br />Hi, My name is <span>Tim</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------about--------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user2.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-paragraph">
+              I am a dedicated Data Designer from Switzerland. My passion lies
+              in using programming to transform data into captivating
+              visualizations. I've learned how powerful data can be when
+              presented effectively and believe it can tell compelling stories
+              and drive change. My main focus is finding innovative ways to
+              present complex data clearly.
+            </p>
+            <p class="about-paragraph">
+              My goal as a Data Designer is to create meaningful impact, whether
+              addressing social, environmental, or economic issues. I'm
+              committed to continuous learning and eagerly anticipate
+              contributing to the data-driven world of tomorrow through
+              inspiring projects and visualizations.
+            </p>
+            <div>
+              <p class="tab-links">Skills</p>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>Javascript (p5.js)</li>
+                <li>html + css</li>
+                <li>Excel</li>
+                <li>Tableau</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>InDesign</li>
+                <li>Cinema4D & Blender</li>
+              </ul>
+            </div>
+            <div>
+              <p class="tab-links">Education</p>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <p class="time">2020 - 2023</p>
+                  <p>
+                    Bachelor of Arts in Visual Communication with a
+                    specialization in Data Design & Art
+                  </p>
+                </li>
+                <li>
+                  <p class="time">2019 - 2020</p>
+                  <p>
+                    Foundation Course in Design, Invers School of Design
+                    Bümpliz, Bern
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------portfolio------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <a href="https://15-minuten-wellen.netlify.app/ " target="_blank"
+              ><img src="images/work1_1.png" />
+            </a>
+            <div class="work-title">
+              <p>15-Minute Waves</p>
+            </div>
+            <div class="work-text">
+              <p>
+                Visualizations of Electricity Time Series Data from the cities
+                of Basel and Zurich in various forms and scales.
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <a
+              href="#"
+              onclick="playVideo('images/22HS_DDA20_Act1_Zaugg_Tim_Pavillon_Präsentationsvideo.mp4')"
+            >
+              <img src="images/22HS_DDA20_Act1_Zaugg_Tim_Pavillon_02.jpg" />
+            </a>
+            <div class="work-title">
+              <p>Novartis Pavilion</p>
+            </div>
+            <div class="work-text">
+              <p>
+                A collaboration with iArt to showcase energy production from the
+                solar panels of the Novartis Pavilion.
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <a href="https://energy-flow.netlify.app/" target="_blank">
+              <img src="images/work3.jpg" />
+            </a>
+            <div class="work-title">
+              <p>Energy Flow</p>
+            </div>
+            <div class="work-text">
+              <p>
+                Visualizations of Electricity Import and Export to and from
+                Switzerland. Experiments conducted in Cables.gl.
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <a href="https://bodysoundsequencer.netlify.app/" target="_blank">
+              <img src="images/Work5.jpg" />
+            </a>
+            <div class="work-title">
+              <p>Bodysound Sequencer</p>
+            </div>
+            <div class="work-text">
+              <p>
+                A data portrait blending body sounds with electronic music's
+                precision.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-list">
+          <div class="work">
+            <a href="https://hotscreens.netlify.app/" target="_blank">
+              <img src="images/work4.jpg" />
+            </a>
+            <div class="work-title">
+              <p>24H Screens</p>
+            </div>
+            <div class="work-text">
+              <p>
+                Capturing screens every 10 minutes over 24 hours, providing a
+                glimpse into daily screen time.
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <a href="#" onclick="playVideo('images/K8.mp4')">
+              <img src="images/K7.jpg" />
+            </a>
+            <div class="work-title">
+              <p>Airquality in Lucerne</p>
+            </div>
+            <div class="work-text">
+              <p>
+                By using LogAir's air quality measurement system, I measured the
+                air quality in Lucerne.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <a href="#" onclick="playVideo('images/Pollution2.mp4')">
+              <img src="images/work8.jpg" />
+            </a>
+            <div class="work-title">
+              <p>Pollution in the Wind</p>
+            </div>
+            <div class="work-text">
+              <p>
+                Contrasting pollution and wind patterns between the cities of
+                London and Amsterdam using various layers of information.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <a href="#" onclick="playVideo('images/Niederschlag.mp4')">
+              <img src="images/work10.jpg" />
+            </a>
+            <div class="work-title">
+              <p>Change in Precipitation</p>
+            </div>
+            <div class="work-text">
+              <p>
+                An interactive visualization displaying various scenarios of
+                precipitation changes due to climate change.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------contact--------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>tim.zaugg93@gmail.com</p>
+            <!-- <p><i class="fa-solid fa-phone"></i>079 661 57 26</p> -->
+            <div class="social-icons">
+              <a href="https://www.instagram.com/_timzaugg_/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/tim-zaugg-772aa5209/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/CV_Tim_Zaugg.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Tim Zaugg</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwLtcEBbP5nqZ9JDw-Gf_8F5r7RkK-Emgrq_MV1Ou_akaKU5EKoUk1AJOS-Et8tciCE/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      function playVideo(videoURL) {
+        event.preventDefault();
+        // Erstelle ein Video-Tag dynamisch
+        const video = document.createElement("video");
+        video.src = videoURL;
+        video.setAttribute("controls", "controls"); // Fügt Video-Steuerungen hinzu
+        video.muted = true; // Stummschaltung des Videos
+        video.autoplay = true; // Automatisches Abspielen
+
+        // Erstelle ein Modal-Fenster für das Video
+        const modal = document.createElement("div");
+        modal.style.position = "fixed";
+        modal.style.top = "0";
+        modal.style.left = "0";
+        modal.style.width = "100%";
+        modal.style.height = "100%";
+        modal.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+        modal.style.zIndex = "9999";
+        modal.appendChild(video);
+
+        // Schließe das Modal, wenn auf das Modal geklickt wird
+        modal.onclick = function () {
+          document.body.removeChild(modal);
+        };
+
+        // Füge das Modal zur Seite hinzu
+        document.body.appendChild(modal);
+      }
+    </script>
+  </body>
+</html>
